@@ -1,4 +1,5 @@
 accessList = 0
-if in accessList then
-  game:GetService("Players").LocalPlayer:Kick("Get a whitelist moron")
+player = game:GetService("Players").LocalPlayer
+if player.UserId in accessList then
+  player:Kick("Get a whitelist moron")
 end
